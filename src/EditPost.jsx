@@ -37,12 +37,13 @@ const EditPost = ({posts ,handleUpdate , setEditBody , setEditTitle , editTitle 
             </form>
         </>
        }
-       {!editTitle} &&
+       {!editTitle &&
                 <>
                     <h2>Post not Found</h2>
                     <p>Well that's disappointing</p>
                     <p><Link to="/">Visit our Homepage</Link></p>
                 </>
+       }
     </main>
   )
 }
